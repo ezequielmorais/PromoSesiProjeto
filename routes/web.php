@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/cadastro_empresas', function () {
+    return view('cadastro_empresas');
+});

@@ -1,4 +1,4 @@
-.login-container {
+/* .login-container {
     background: #ffffff;
     padding: 20px 30px;
     border-radius: 8px;
@@ -52,4 +52,39 @@
 }
 .forgot-password a:hover {
     text-decoration: underline;
+}*/
+.ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+
+.ctn-botoes-cadastrar{
+    width: 142px;
+    height: 50px; 
+    background: #68B42D;
+    border-radius: 10px;
+    color: white; 
+    font-size: 20px; 
+    font-family: Inter; 
+    left: 990px; 
+    top: 665px;
+    /* position: absolute; justify-content: center; align-items: center; */
+
+    /* position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex"> */
+    
+}
+
+.ctn-titulo{
+    /* width: 562px; */
+    /* height: 47px;  */
+    left: 300px; 
+    /* top: 229px;  */
+    position: absolute; 
+    color: #0E4194; 
+    font-size: 30px; 
+    font-family: Inter; 
+    font-weight: 700;
+    /* word-wrap: break-word; */
 }
