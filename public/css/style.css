@@ -1,0 +1,115 @@
+.login-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px; 
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #303030;
+    border-radius: 4px;
+    border-radius: 10px;
+}
+.form-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+ .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+} 
+.btn:hover {
+    background-color: #45a049;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.button-group{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.titulo-container-h2{
+    color: rgba(14, 65, 148, 1);
+    display: flex;
+    justify-content: left;
+    font-size: 30px;    
+}
+
+.btn-salvar{
+    background-color: rgba(104, 180, 45, 1);
+    color: white;
+    border-radius: 10px;
+    font-size: 20;
+    font: bold;
+}
+
+.btn-cancelar{
+    background-color: rgba(70, 70, 70, 1);
+    color: white;
+    border-radius: 10px;
+    font-size: 20;
+    font: bold;
+}
+.btn-add{
+    background-color: rgba(104, 180, 45, 1);
+    color: white;
+    border-radius: 10px;
+    font-size: 20;
+    font: bold;
+}
+
+.container_cadastro_usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.container_cadastro_usuario_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.agrupamento{
+    width: 600px;
+}
