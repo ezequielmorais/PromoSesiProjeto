@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /* position: relative; */
   }
 
   .logo-container {
@@ -44,13 +44,12 @@
 </style>
 
 <body>
-
   <header class="header">
     <img class="logo-container " src="img/logo-promoSesi.png" alt="logo">
     <i class="bi bi-list"></i>
 
   </header>
-  <div class="page-content">
+  <div class="container mt-4">
     @yield('Conteudo')
   </div>
 </body>

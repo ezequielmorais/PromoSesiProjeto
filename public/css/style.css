@@ -53,38 +53,77 @@
 .forgot-password a:hover {
     text-decoration: underline;
 }*/
+
+.col-forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .ctn{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 } 
 
-.ctn-botoes-cadastrar{
-    width: 142px;
-    height: 50px; 
-    background: #68B42D;
-    border-radius: 10px;
-    color: white; 
-    font-size: 20px; 
-    font-family: Inter; 
-    left: 990px; 
-    top: 665px;
-    /* position: absolute; justify-content: center; align-items: center; */
+.ctn-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 
-    /* position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex"> */
+.ctn-botoes-cadastrar{
+    background: #68B42D;
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: 700;
+    font-family: Inter; 
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* align-items: center;  */
+    /* align-items: flex-start; */
+    /* display: inline-flex */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* word-wrap: break-word; */
+}
+
+.ctn-botoes-cancelar{
+    background: #464646;
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: 700;
+    font-family: Inter; 
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* display: inline-flex */
+    /* align-items: center; */
+    /* div style="flex-direction: column;  align-items: flex-start; display: flex"> */
 }
 
 .ctn-titulo{
-    /* width: 562px; */
-    /* height: 47px;  */
-    left: 300px; 
-    /* top: 229px;  */
-    position: absolute; 
     color: #0E4194; 
-    font-size: 30px; 
+    font-size: 32px; 
     font-family: Inter; 
     font-weight: 700;
-    /* word-wrap: break-word; */
+}
+
+label{
+    font-size: 24px; 
+    font-family: Inter;
+    font-weight: 500;
+    color:#000;
 }
