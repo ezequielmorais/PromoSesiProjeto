@@ -16,7 +16,8 @@
 <style>
   body {
     margin: 0;
-    font-family: "Noto Sans", sans-serif;
+    /* font-family: "Noto Sans", sans-serif; */
+    font-family: "Inter", serif;
   }
 
   .header {
@@ -25,7 +26,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: relative; */
   }
 
   .logo-container {
@@ -46,10 +46,10 @@
 <body>
   <header class="header">
     <img class="logo-container " src="img/logo-promoSesi.png" alt="logo">
-    <i class="bi bi-list"></i>
+    <!-- <i class="bi bi-list"></i> -->
 
   </header>
-  <div class="container mt-4">
+  <div class="container mt-5">
     @yield('Conteudo')
   </div>
 </body>

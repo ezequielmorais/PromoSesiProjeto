@@ -7,42 +7,42 @@
     <div>
         <div class="mb-3">
             <label class="form-label">CNPJ</label>
-            <input class="form-control" placeholder="Insira o CNPJ da empresa" id="identification">
+            <input class="form-control" placeholder="Insira o CNPJ da empresa" name="CPNJ">
         </div>
     </div>
     
+
     <div class="container ctn-botoes">
-        <button class="btn ctn-botoes-cadastrar">Pesquisar</button>
+        <button class="ctn-botoes-cadastrar">@if (isset($usuario)) Pesquisar Novamente @else Pesquisar
+        
+        @endif</button>
+    </div>
+   
+    <div>
+        <div class="mb-3">
+            <label class="form-label">CNPJ selecionado</label>
+            <input class="form-control" name="CPNJ" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input class="form-control" name="Nome" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Razão Social</label>
+            <input class="form-control" name="Razao Social" readonly>
+        </div>
+    </div>
+
+    <div class="ctn-botoes">
+        <button class="ctn-botoes-cadastrar">Enviar</button>
+        <button class="ctn-botoes-cadastrar">Salvar e cadastrar novo</button>
     </div>
     
-    <!-- <div class="col-forms">
-        <div>
-            <div class="mb-3">
-                <label class="form-label">Nome da empresa</label>
-                <input class="form-control" placeholder="Insira o nome da empresa">
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">CNPJ</label>
-                <input class="form-control" placeholder="Insira o CNPJ da empresa">
-            </div>
-        </div>
-
-        <div>
-            <div class="mb-3">
-                <label class="form-label">Descrição</label>
-                <input class="form-control" placeholder="Insira a descrição da empresa">
-            </div>
-        </div>
-
-    </div>
-    <div class="container ctn-botoes">
-        <button class="ctn-botoes-cadastrar">Cadastrar</button>
-        <button class="ctn-botoes-cancelar">Cancelar</button>
-    </div> -->
 </div>
 
-<script>
+<!-- <script>
     document.getElementById('identification').addEventListener('input', function(e) {
     
         let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
@@ -56,7 +56,7 @@
         //Caso queira pegar apenas os números use essa função para remover todos os caracteres menos os números em Javascript
         let valor = e.target.value.replace(/[^0-9]/g, '');
     });
-</script>
+</script> -->
 
 
 @endsection

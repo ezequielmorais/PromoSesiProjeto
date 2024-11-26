@@ -9,6 +9,7 @@ class EmpresasController extends Controller
 {
  public function CadastrarEmpresa(){
 
+
     return view('cadastro_empresas');
  }
 }
