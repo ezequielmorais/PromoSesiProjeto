@@ -1,0 +1,104 @@
+body {
+    font-family: "inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.Conecte-se-container {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.titulo-campo {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-top: 5px;
+    position: relative;
+}
+
+.input-campos,
+.seleção {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    font-size: 14px;
+}
+
+.input-campos {
+    padding-right: 40px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 16px;
+}
+
+.entrar {
+    width: 110px;
+    max-width: 200px;
+    background-color: #2d87ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+}
+
+.esqueceu-senha,
+.link-de-registro {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #0e4194;
+    text-decoration: none;
+}
+
+.esqueceu-senha {
+    text-align: left;
+}
+
+.esqueceu-senha:hover,
+.link-de-registro:hover {
+    text-decoration: underline;
+}
+
+.titulo-campo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    color: #0e4194;
+}
+
+.titulo {
+    color: #0e4194;
+    font-family: "inter", sans-serif;
+}
+
+.entrar {
+    background-color: #68b42d;
+}

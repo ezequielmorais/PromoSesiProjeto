@@ -18,7 +18,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Danfo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <title>template</title>
 </head>
 <style>
