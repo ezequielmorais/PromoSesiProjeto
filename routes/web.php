@@ -22,4 +22,7 @@ Route::get('/login', function () {
 });
 
 Route::get('/cadastro_empresas', [EmpresasController::class, 'CadastrarEmpresa']);
- 
+
+Route::get('/cadastro_pessoa_fibra', function () {
+    return view('cadastro_pessoa_fibra');
+});
