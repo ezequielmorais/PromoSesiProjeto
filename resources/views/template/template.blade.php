@@ -18,6 +18,7 @@
     margin: 0;
     /* font-family: "Noto Sans", sans-serif; */
     font-family: "Inter", serif;
+    background-color: #f7f7f7;
   }
 
   .header {

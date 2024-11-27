@@ -2,23 +2,22 @@
 @section('title', 'Cadastro de empresa')
 @section('Conteudo')
 
-<div>
+<div class="div-principal">
     <div class="ctn-titulo">Cadastro de empresa</div>
-    <div>
+
+    <div class="painel">
         <div class="mb-3">
             <label class="form-label">CNPJ</label>
-            <input class="form-control" placeholder="Insira o CNPJ da empresa" name="CPNJ">
+            <div class="botoes-alinhados">
+                <input class="form-control" placeholder="Insira o CNPJ da empresa" name="CPNJ">
+                <button class="ctn-botoes-cadastrar">@if (isset($usuario)) Pesquisar Novamente @else Pesquisar
+
+                    @endif</button>
+            </div>
         </div>
     </div>
-    
 
-    <div class="container ctn-botoes">
-        <button class="ctn-botoes-cadastrar">@if (isset($usuario)) Pesquisar Novamente @else Pesquisar
-        
-        @endif</button>
-    </div>
-   
-    <div>
+    <div class="painel">
         <div class="mb-3">
             <label class="form-label">CNPJ selecionado</label>
             <input class="form-control" name="CPNJ" readonly>
@@ -33,13 +32,13 @@
             <label class="form-label">Razão Social</label>
             <input class="form-control" name="Razao Social" readonly>
         </div>
+        
+        <div class="ctn-botoes mt-4">
+            <button class="ctn-botoes-cadastrar">Enviar</button>
+            <button class="ctn-botoes-cadastrar">Salvar e cadastrar novo</button>
+        </div>
     </div>
 
-    <div class="ctn-botoes">
-        <button class="ctn-botoes-cadastrar">Enviar</button>
-        <button class="ctn-botoes-cadastrar">Salvar e cadastrar novo</button>
-    </div>
-    
 </div>
 
 <!-- <script>
