@@ -4,6 +4,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
+<<<<<<< HEAD
 }  */
  /* .login-container h2 {
     text-align: center;
@@ -20,19 +21,41 @@
 } 
 .form-group label{
     display: block;
+=======
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+>>>>>>> cadastro_pessoa_fibra
 }
 .form-group input {
     width: 100%;
     padding: 10px;
+<<<<<<< HEAD
     border: 1px solid #303030;
     border-radius: 10px;
     margin-bottom: 5px;
+=======
+    border: 1px solid #ccc;
+    border-radius: 4px;
+>>>>>>> cadastro_pessoa_fibra
 }
 .form-group input:focus {
     border-color: #4caf50;
     outline: none;
 }
+<<<<<<< HEAD
  .btn {
+=======
+.btn {
+>>>>>>> cadastro_pessoa_fibra
     display: block;
     width: 100%;
     padding: 10px;
@@ -42,7 +65,11 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> cadastro_pessoa_fibra
 .btn:hover {
     background-color: #45a049;
 }
@@ -56,6 +83,7 @@
 }
 .forgot-password a:hover {
     text-decoration: underline;
+<<<<<<< HEAD
 }
 .button-group{
     display: flex;
@@ -154,3 +182,113 @@
     border: 1px solid #303030;
     border-radius: 10px;
 }
+=======
+}*/
+
+.col-forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.ctn-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border: none;
+}
+
+.ctn-botoes-cadastrar:active{
+    box-shadow: 0 2px #2e7d32; /* Reduz a sombra ao clicar */
+    transform: translateY(2px); /* Movimenta o botão ao clicar */
+}
+
+.ctn-botoes-cadastrar{
+    background: #68B42D;
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: 500;
+    font-family: Inter; 
+    border-radius: 10px;
+    text-align: center;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    padding: 10px 20px;
+    border: none;
+    
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* align-items: center;  */
+    /* align-items: flex-start; */
+    /* display: inline-flex */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* word-wrap: break-word; */
+}
+
+.ctn-botoes-cancelar{
+    background: #464646;
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: 700;
+    font-family: Inter; 
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* display: inline-flex */
+    /* align-items: center; */
+    /* div style="flex-direction: column;  align-items: flex-start; display: flex"> */
+}
+
+.ctn-titulo{
+    color: #0E4194; 
+    font-size: 30px; 
+    font-family: Inter; 
+    font-weight: 700;
+    /* margin-bottom: 20px; */
+}
+
+.painel{
+    padding: 2.25rem !important;
+    /* margin: 1rem !important; */
+    box-shadow: var(--bs-box-shadow-sm) !important;
+    border-radius: 10px;
+    border: 1px solid #303030;
+}
+
+.form-control {
+    border: var(--bs-border-width) solid #303030 !important;
+}
+
+.div-principal{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.botoes-alinhados{
+    display: flex;
+    gap: 20px;
+}
+
+label{
+    font-size: 24px; 
+    font-family: Inter;
+    font-weight: 500;
+    color:#000;
+}
+>>>>>>> cadastro_pessoa_fibra
