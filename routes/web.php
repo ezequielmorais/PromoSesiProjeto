@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmpresasController;
+use App\Http\Controllers\EventosController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +28,5 @@ Route::get('/cadastro_empresas', [EmpresasController::class, 'CadastrarEmpresa']
 Route::get('/cadastro_pessoa_fibra', function () {
     return view('cadastro_pessoa_fibra');
 });
+
+Route::get('/listar_eventos', [EventosController::class, 'index']);

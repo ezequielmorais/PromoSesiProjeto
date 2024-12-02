@@ -7,7 +7,7 @@
 
     <div class="painel">
         <div class="mb-3">
-            <label for="login-usuario" class="col-forms">Login do usuário</label>
+            <label for="login-usuario" class="col-forms sub-titulo">Login do usuário</label>
             <span>Login do usuário dentro do FIBRA SEGURANÇA</span>
             
             <div class="botoes-alinhados mt-2">
@@ -21,17 +21,17 @@
 
     <div class="painel">
         <div class="mb-3">
-            <label class="form-label">Usuário selecionado</label>
+            <label class="form-label sub-titulo">Usuário selecionado</label>
             <input class="form-control" readonly>
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Nome</label>
+            <label class="form-label sub-titulo">Nome</label>
             <input class="form-control" readonly>
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Perfil</label>
+            <label class="form-label sub-titulo">Perfil</label>
             <select class="form-control" required>
                 <option>Teste 1</option>
                 <option>Teste 2</option>

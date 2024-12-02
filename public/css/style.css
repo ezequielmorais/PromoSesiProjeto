@@ -64,7 +64,7 @@
     border: var(--bs-border-width) solid #303030 !important;
 }
 
-label{
+.sub-titulo{
     font-size: 24px; 
     font-family: Inter;
     font-weight: 500;

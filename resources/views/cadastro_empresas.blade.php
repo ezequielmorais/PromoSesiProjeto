@@ -7,7 +7,7 @@
 
     <div class="painel">
         <div class="mb-3">
-            <label class="form-label">CNPJ</label>
+            <label class="form-label sub-titulo">CNPJ</label>
             <div class="botoes-alinhados">
                 <input class="form-control" placeholder="Insira o CNPJ da empresa" name="CPNJ">
                 <button class="ctn-botoes-cadastrar">@if (isset($usuario)) Pesquisar Novamente @else Pesquisar
@@ -19,17 +19,17 @@
 
     <div class="painel">
         <div class="mb-3">
-            <label class="form-label">CNPJ selecionado</label>
+            <label class="form-label sub-titulo">CNPJ selecionado</label>
             <input class="form-control" name="CPNJ" readonly>
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Nome</label>
+            <label class="form-label sub-titulo">Nome</label>
             <input class="form-control" name="Nome" readonly>
         </div>
 
         <div class="mb-3">
-            <label class="form-label">Razão Social</label>
+            <label class="form-label sub-titulo">Razão Social</label>
             <input class="form-control" name="Razao Social" readonly>
         </div>
         
