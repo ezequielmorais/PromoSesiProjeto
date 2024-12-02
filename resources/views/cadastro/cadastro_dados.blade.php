@@ -7,50 +7,50 @@
         <div class="titulo-container-h2 container">
             <h2>Cadastro de Dados Pessoais</h2>
         </div>
-        <form class="form-grid">
-            <div class="container_cadastro_usuario container shadow">
-                <div class="agrupamento">
+        <form class="col-forms">
+            <div class="painel shadow" id="painel-flex-column">
+                <div class="ctn" id="container_cadastro_usuario">
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="nome">Nome Completo</label></span>
-                        <label class="description">Insira o nome do participante</label>
-                        <input type="descricao-nome" id="nome" name="nome">
+                        <label class="form-group label">Insira o nome do participante</label>
+                        <input type="nome" id="nome" name="nome">
                     </div>
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="cpf">CPF</label></span>
-                        <label class="description">Adicione uma breve descrição sobre o nome</label>
+                        <label class="form-group label">Adicione uma breve descrição sobre o nome</label>
                         <input name="cpf" type="text" id="cpf" maxlenght="14" oninput="aplicarMascaraCPF(this)"
                             onblur="validarAoTerminar(this)">
                     </div>
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="email">Email</label></span>
-                        <label class="description">Insira o e-mail do participante</label>
+                        <label class="form-group label">Insira o e-mail do participante</label>
                         <input type="email" id="email" name="email">
                     </div>
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="telefone">Telefone</label></span>
-                        <label class="description">Insira o telefone do participante</label>
+                        <label class="form-group label">Insira o telefone do participante</label>
                         <input type="text" id="telefone" name="telefone">
                     </div>
                 </div>
-                <div class="agrupamento">
+                <div class="ctn" id="container_cadastro_usuario">
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="usuario">Usuário</label></span>
-                        <label class="description">Insira o nome de usuário desejado</label>
+                        <label class="form-group label">Insira o nome de usuário desejado</label>
                         <input type="text" id="usuario" name="usuario">
                     </div>
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="senha">Senha</label></span>
-                        <label class="description">Crie uma senha segura</label>
+                        <label class="form-group label">Crie uma senha segura</label>
                         <input type="password" id="senha" name="senha">
                     </div>
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="confirmacao-senha">Confirmação de Senha</label></span>
-                        <label class="description">Repita a senha criada</label>
+                        <label class="form-group label">Repita a senha criada</label>
                         <input type="password" id="confirmacao-senha" name="confirmacao-senha">
                     </div>
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="data-nascimento">Data de Nascimento</label></span>
-                        <label class="description">Insira a data de nascimento do participante</label>
+                        <label class="form-group label">Insira a data de nascimento do participante</label>
                         <input type="date" id="data-nascimento" name="data-nascimento">
                     </div>
                 </div>
@@ -61,18 +61,18 @@
         <div class="titulo-container-h2 container">
             <h2>Empresas Vinculadas</h2>
         </div>
-        <form class="form-grid_empresa_vinculada">
-            <div class="container_cadastro_usuario_2 container shadow">
-                <div class="div_box">
-                    <input type="text" id="campo_pequisa"
+        <form class="col-forms">
+            <div class="painel shadow">
+                <div class="mb-3">
+                    <input type="text" class="form-group input" id="campo_pequisa"
                         placeholder="Pesquisar empresas vinculadas">
-                    <button type="button" class="btn-add">+</button>
+                    <button type="button" class="btn">+</button>
                 </div>
-                <label for="Empresa Vinculada">Empresa Vinculada</label>
+                <label class="form-group label" for="Empresa Vinculada">Empresa Vinculada</label>
                 <input type="text" id="empresa_vinculada">
-                <div class="button-group">
-                    <button type="submit" class="btn-salvar">Salvar</button>
-                    <button type="button" class="btn-cancelar">Cancelar</button>
+                <div class="ctn-botoes">
+                    <button type="submit" class="ctn-botoes-cadastrar">Salvar</button>
+                    <button type="button" class="ctn-botoes-cancelar">Cancelar</button>
                 </div>
             </div>
         </form>

@@ -19,10 +19,9 @@
     margin-bottom: 5px;
     font-size: 16px;
 } 
-.form-group label{
+/* .form-group label{
     display: block;
-=======
-}
+} */
 .login-container h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -32,30 +31,19 @@
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
->>>>>>> cadastro_pessoa_fibra
+    /* font-weight: bold; */
 }
 .form-group input {
     width: 100%;
     padding: 10px;
-<<<<<<< HEAD
-    border: 1px solid #303030;
-    border-radius: 10px;
-    margin-bottom: 5px;
-=======
     border: 1px solid #ccc;
     border-radius: 4px;
->>>>>>> cadastro_pessoa_fibra
 }
 .form-group input:focus {
     border-color: #4caf50;
     outline: none;
 }
-<<<<<<< HEAD
- .btn {
-=======
 .btn {
->>>>>>> cadastro_pessoa_fibra
     display: block;
     width: 100%;
     padding: 10px;
@@ -65,11 +53,7 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-<<<<<<< HEAD
-} 
-=======
 }
->>>>>>> cadastro_pessoa_fibra
 .btn:hover {
     background-color: #45a049;
 }
@@ -83,106 +67,6 @@
 }
 .forgot-password a:hover {
     text-decoration: underline;
-<<<<<<< HEAD
-}
-.button-group{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.titulo-container-h2{
-    color: rgba(14, 65, 148, 1);
-    display: flex;
-    justify-content: left;
-    font-size: 30px;    
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.btn-salvar{
-    background-color: rgba(104, 180, 45, 1);
-    color: white;
-    border-radius: 10px;
-    font-size: 20;
-    font: bold;
-}
-
-.btn-cancelar{
-    background-color: rgba(70, 70, 70, 1);
-    color: white;
-    border-radius: 10px;
-    font-size: 20;
-    font: bold;
-}
-.btn-add{
-    background-color: rgba(104, 180, 45, 1);
-    color: white;
-    border-radius: 10px;
-    font-size: 20;
-    font: bold; 
-    width: 60px; /* Largura de 700px */
-    height: 40px; /* Altura de 46px */
-    font-size: 46px; /* Tamanho da fonte do botão */
-    border-radius: 10px;
-    text-align: center;
-
-}
-.container_cadastro_usuario{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #0E4194;
-}
-.container_cadastro_usuario_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; /* Centraliza os itens na coluna */
-    padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-}
-.button-group{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.agrupamento{
-    width: 515px;
-}
-.div_box {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    gap: 10px; /* Espaço entre o campo de pesquisa e o botão */
-    width: 100%;
-
-}
-.titulo_bolder{
-    font-size: 24px;
-    font-weight: bolder;
-}
-.titulo-container-h2 h2 {
-    margin-bottom: 10px; /* Espaço entre o título e o conteúdo */
-}
-.form-grid_empresa_vinculada {
-    width: 100%; /* Faz o campo ocupar toda a largura disponível */
-    border-radius: 10px;
-    border: 1px solid #0E4194;
-    margin-top: 10px;  
-}
-#campo_pequisa{
-    width: 700px; /* Largura de 700px */
-    height: 46px; /* Altura de 46px */
-    padding: 10px;
-    font-size: 16px; /* Tamanho da fonte do input */
-    border: 1px solid #303030;
-    border-radius: 10px;
-}
-=======
 }*/
 
 .col-forms{
@@ -269,6 +153,10 @@
     border-radius: 10px;
     border: 1px solid #303030;
 }
+#painel-flex-column{
+    display: flex;
+    flex-direction: row !important;
+}
 
 .form-control {
     border: var(--bs-border-width) solid #303030 !important;
@@ -291,4 +179,11 @@ label{
     font-weight: 500;
     color:#000;
 }
->>>>>>> cadastro_pessoa_fibra
+#container_cadastro_usuario{
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    width: 515px;
+}
