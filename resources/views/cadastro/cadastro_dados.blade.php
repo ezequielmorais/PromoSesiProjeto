@@ -4,7 +4,7 @@
 
 <body>
     <div class="container">
-        <div class="titulo-container-h2 container">
+        <div class="ctn-titulo container">
             <h2>Cadastro de Dados Pessoais</h2>
         </div>
         <form class="col-forms">
@@ -58,18 +58,18 @@
 
         </form>
 
-        <div class="titulo-container-h2 container">
+        <div class="ctn-titulo-h2 container">
             <h2>Empresas Vinculadas</h2>
         </div>
         <form class="col-forms">
             <div class="painel shadow">
                 <div class="mb-3">
-                    <input type="text" class="form-group input" id="campo_pequisa"
-                        placeholder="Pesquisar empresas vinculadas">
-                    <button type="button" class="btn">+</button>
-                </div>
-                <label class="form-group label" for="Empresa Vinculada">Empresa Vinculada</label>
-                <input type="text" id="empresa_vinculada">
+    <input type="text" class="form-group input" id="campo_pequisa" placeholder="Pesquisar empresas vinculadas">
+    <button type="button" class="btn" id="btn-add-empresa">+</button>
+</div>
+
+<div id="empresas-vinculadas"></div>
+            <!-- botoes -->
                 <div class="ctn-botoes">
                     <button type="submit" class="ctn-botoes-cadastrar">Salvar</button>
                     <button type="button" class="ctn-botoes-cancelar">Cancelar</button>
