@@ -142,7 +142,42 @@
     border: none;
 }
 
+.ctn-botoes-verde-tabela{
+    background: #68B42D;
+    color: #fff; 
+    font-weight: 500;
+    font-family: Inter; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+}
+
+.ctn-botoes-vermelho-tabela{
+    background: #FF0000;
+    color: #fff; 
+    font-weight: 500;
+    font-family: Inter; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+}
+
+.ctn-botoes-tabela{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
 .botoes-alinhados{
     display: flex;
     gap: 20px;
+}
+
+.thead-tabela{
+    background-color: #0E4194;
+    color: white;
+    border-radius: 10px;
 }

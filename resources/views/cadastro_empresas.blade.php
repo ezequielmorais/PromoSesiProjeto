@@ -10,7 +10,7 @@
             <label class="form-label sub-titulo">CNPJ</label>
             <div class="botoes-alinhados">
                 <input class="form-control" placeholder="Insira o CNPJ da empresa" name="CPNJ">
-                <button class="ctn-botoes-cadastrar">@if (isset($usuario)) Pesquisar Novamente @else Pesquisar
+                <button class="ctn-botoes-verde">@if (isset($usuario)) Pesquisar Novamente @else Pesquisar
 
                     @endif</button>
             </div>
@@ -34,8 +34,8 @@
         </div>
         
         <div class="ctn-botoes mt-4">
-            <button class="ctn-botoes-cadastrar">Enviar</button>
-            <button class="ctn-botoes-cadastrar">Salvar e cadastrar novo</button>
+            <button class="ctn-botoes-verde">Enviar</button>
+            <button class="ctn-botoes-verde">Salvar e cadastrar novo</button>
         </div>
     </div>
 

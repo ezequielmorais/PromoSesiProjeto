@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class EventosController extends Controller
 {
     //
-    public function index(){
+    public function ListarEventos(){
         return view("listar_eventos");
     }
 }

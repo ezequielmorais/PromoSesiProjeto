@@ -29,4 +29,4 @@ Route::get('/cadastro_pessoa_fibra', function () {
     return view('cadastro_pessoa_fibra');
 });
 
-Route::get('/listar_eventos', [EventosController::class, 'index']);
+Route::get('/listar_eventos', [EventosController::class, 'ListarEventos']);
