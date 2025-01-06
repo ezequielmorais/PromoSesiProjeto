@@ -7,7 +7,7 @@
         <div class="ctn-titulo container">
             <h2>Cadastro de Dados Pessoais</h2>
         </div>
-        <form class="col-forms">
+        <form class="col-forms" style="margin-bottom: 30px;">
             <div class="painel shadow" id="painel-flex-column">
                 <div class="ctn" id="container_cadastro_usuario">
                     <div class="form-group">
@@ -29,7 +29,8 @@
                     <div class="form-group">
                         <span class="titulo_bolder"><label for="telefone">Telefone</label></span>
                         <label class="form-group label">Insira o telefone do participante</label>
-                        <input type="text" id="telefone" name="telefone">
+                        <input type="text" id="telefone" name="telefone" oninput="aplicarMascaraTelefone(this)"
+                            onblur="aplicarMascaraTelefone(this)">
                     </div>
                 </div>
                 <div class="ctn" id="container_cadastro_usuario">
@@ -58,24 +59,30 @@
 
         </form>
 
-        <div class="ctn-titulo-h2 container">
+        <div class="ctn-titulo container">
             <h2>Empresas Vinculadas</h2>
         </div>
+
         <form class="col-forms">
             <div class="painel shadow">
-                <div class="mb-3">
-    <input type="text" class="form-group input" id="campo_pequisa" placeholder="Pesquisar empresas vinculadas">
-    <button type="button" class="btn" id="btn-add-empresa">+</button>
-</div>
+                <div class="pesquisa-container">
+                    <input type="text" class="form-group input" id="campo_pequisa"
+                        placeholder="Pesquisar empresas vinculadas">
+                    <button type="button" class="btn" id="btn-add-empresa">+</button>
+                </div>
 
-<div id="empresas-vinculadas"></div>
-            <!-- botoes -->
+                <div id="empresas-vinculadas"></div>
+
+                <!-- Novo Container de Empresas Vinculadas -->
+                <div id="novo-container" class="novo-container"></div>
+
                 <div class="ctn-botoes">
                     <button type="submit" class="ctn-botoes-cadastrar">Salvar</button>
                     <button type="button" class="ctn-botoes-cancelar">Cancelar</button>
                 </div>
             </div>
         </form>
+
     </div>
 </body>
 
@@ -86,6 +93,9 @@
         let cpf = cpfInput.value;
 
         cpf = cpf.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+        if (cpf.length > 11) {
+            cpf = cpf.substring(0, 11);
+        }
         cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Aplica o primeiro ponto
         cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Aplica o segundo ponto
         cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); // Aplica o traço
@@ -138,6 +148,20 @@
             mensagem.textContent = "CPF inválido!";
             mensagem.className = "error";
         }
+    }
+
+    //validar número de telefone
+    function aplicarMascaraTelefone(TelefoneInput) {
+        let telefone = TelefoneInput.value;
+
+        telefone = telefone.replace(/\D/g, "");
+        if (telefone.length > 11) {
+            telefone = telefone.substring(0, 11);
+        }
+        telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2");
+        telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2");
+
+        TelefoneInput.value = telefone;
     }
 </script>
 @endsection

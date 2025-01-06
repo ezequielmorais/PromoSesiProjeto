@@ -1,40 +1,57 @@
 document.addEventListener('DOMContentLoaded', function() {
     let empresaCounter = 1;  // Contador para acompanhar a ordem das empresas
 
-    // Função que cria um novo campo de "Empresa Vinculada"
+    // Função para atualizar a numeração das empresas
+    function atualizarContagem() {
+        const empresas = document.querySelectorAll('.novo-form-group');
+        empresas.forEach((empresaDiv, index) => {
+            const titulo = empresaDiv.querySelector('label');
+            titulo.textContent = 'Empresa Vinculada nº ' + (index + 1);
+        });
+        empresaCounter = empresas.length + 1;  // Atualiza o contador baseado no número de empresas existentes
+    }
+
+    // Função que cria a nova estrutura de "Empresa Vinculada"
     function addEmpresaVinculada(valorPesquisa) {
+        const novoContainer = document.getElementById('novo-container');
+        
         if (empresaCounter <= 3) {
+            // Cria a nova div para o container
             const empresaDiv = document.createElement('div');
-            empresaDiv.classList.add('empresa-container');
-            empresaDiv.id = 'empresa-' + empresaCounter;
+            empresaDiv.classList.add('novo-form-group');
+            
+            // Cria o título da empresa
+            const titulo = document.createElement('label');
+            titulo.textContent = 'Empresa Vinculada nº ' + empresaCounter;
+            empresaDiv.appendChild(titulo);
 
-            // Adiciona o label com a numeração
-            const label = document.createElement('label');
-            label.textContent = 'Empresa Vinculada nº ' + empresaCounter;
-
-            // Cria o input com o valor da pesquisa
+            const pesquisaContainer = document.createElement('div');
+            pesquisaContainer.classList.add('pesquisa-container');
+            
+            // Cria o campo de pesquisa
             const input = document.createElement('input');
             input.type = 'text';
             input.value = valorPesquisa;
             input.classList.add('form-group', 'input');
-
+            pesquisaContainer.appendChild(input);
+            
             // Cria o botão de remover
             const removeButton = document.createElement('button');
             removeButton.textContent = '-';
             removeButton.classList.add('btn-remover');
             removeButton.onclick = function() {
                 empresaDiv.remove();
-                empresaCounter--;  // Decrementa o contador quando um campo for removido
+                atualizarContagem();  // Atualiza a contagem das empresas após remoção
             };
+            pesquisaContainer.appendChild(removeButton);
 
-            empresaDiv.appendChild(label);
-            empresaDiv.appendChild(input);
-            empresaDiv.appendChild(removeButton);
+            empresaDiv.appendChild(pesquisaContainer);
             
-            // Adiciona o novo campo de empresa vinculada na div com id 'empresas-vinculadas'
-            document.getElementById('empresas-vinculadas').appendChild(empresaDiv);
-
-            empresaCounter++;  // Incrementa o contador quando um novo campo for adicionado
+            // Adiciona o novo campo de empresa vinculada no container
+            novoContainer.appendChild(empresaDiv);
+            
+            // Atualiza a contagem das empresas
+            atualizarContagem();
         }
     }
 
