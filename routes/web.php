@@ -15,16 +15,26 @@ use App\Http\Controllers\EmpresasController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (): Factory|View {
     return view('welcome');
 });
+
 Route::get('/login', function () {
     return view('login');
 });
 
 Route::get('/cadastro_dados', [UsuarioController::class, 'CadastroPessoas']);
+
 Route::get('/cadastro_empresas', [EmpresasController::class, 'CadastrarEmpresa']);
 
 Route::get('/cadastro_pessoa_fibra', function () {
     return view('cadastro_pessoa_fibra');
+});
+
+Route::get('/tela_evento', function () {
+    return view('tela_evento');
+});
+
+Route::get('/cadastro_eventos', function () {
+    return view('cadastro/cadastro_eventos');
 });
