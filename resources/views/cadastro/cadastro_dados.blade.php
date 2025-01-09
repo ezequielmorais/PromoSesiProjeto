@@ -11,47 +11,47 @@
             <div class="painel shadow" id="painel-flex-column">
                 <div class="ctn" id="container_cadastro_usuario">
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="nome">Nome Completo</label></span>
-                        <label class="form-group label">Insira o nome do participante</label>
+                        <span class="form-label sub-titulo"><label for="nome">Nome Completo</label></span>
+                        <label class="label-info">Insira o nome do participante</label>
                         <input type="nome" id="nome" name="nome">
                     </div>
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="cpf">CPF</label></span>
-                        <label class="form-group label">Adicione uma breve descrição sobre o nome</label>
+                        <span class="form-label sub-titulo"><label for="cpf">CPF</label></span>
+                        <label class="label-info">Adicione uma breve descrição sobre o nome</label>
                         <input name="cpf" type="text" id="cpf" maxlenght="14" oninput="aplicarMascaraCPF(this)"
                             onblur="validarAoTerminar(this)">
                     </div>
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="email">Email</label></span>
-                        <label class="form-group label">Insira o e-mail do participante</label>
+                        <span class="form-label sub-titulo"><label for="email">Email</label></span>
+                        <label class="label-info">Insira o e-mail do participante</label>
                         <input type="email" id="email" name="email">
                     </div>
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="telefone">Telefone</label></span>
-                        <label class="form-group label">Insira o telefone do participante</label>
+                        <span class="form-label sub-titulo"><label for="telefone">Telefone</label></span>
+                        <label class="label-info">Insira o telefone do participante</label>
                         <input type="text" id="telefone" name="telefone" oninput="aplicarMascaraTelefone(this)"
                             onblur="aplicarMascaraTelefone(this)">
                     </div>
                 </div>
                 <div class="ctn" id="container_cadastro_usuario">
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="usuario">Usuário</label></span>
-                        <label class="form-group label">Insira o nome de usuário desejado</label>
+                        <span class="form-label sub-titulo"><label for="usuario">Usuário</label></span>
+                        <label class="label-info">Insira o nome de usuário desejado</label>
                         <input type="text" id="usuario" name="usuario">
                     </div>
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="senha">Senha</label></span>
-                        <label class="form-group label">Crie uma senha segura</label>
+                        <span class="form-label sub-titulo"><label for="senha">Senha</label></span>
+                        <label class="label-info">Crie uma senha segura</label>
                         <input type="password" id="senha" name="senha">
                     </div>
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="confirmacao-senha">Confirmação de Senha</label></span>
-                        <label class="form-group label">Repita a senha criada</label>
+                        <span class="form-label sub-titulo"><label for="confirmacao-senha">Confirmação de Senha</label></span>
+                        <label class="label-info">Repita a senha criada</label>
                         <input type="password" id="confirmacao-senha" name="confirmacao-senha">
                     </div>
                     <div class="form-group">
-                        <span class="titulo_bolder"><label for="data-nascimento">Data de Nascimento</label></span>
-                        <label class="form-group label">Insira a data de nascimento do participante</label>
+                        <span class="form-label sub-titulo"><label for="data-nascimento">Data de Nascimento</label></span>
+                        <label class="label-info">Insira a data de nascimento do participante</label>
                         <input type="date" id="data-nascimento" name="data-nascimento">
                     </div>
                 </div>
@@ -64,7 +64,7 @@
         </div>
 
         <form class="col-forms">
-            <div class="painel shadow">
+            <div class="painel shadow" style=" width: 98%;">
                 <div class="pesquisa-container">
                     <input type="text" class="form-group input" id="campo_pequisa"
                         placeholder="Pesquisar empresas vinculadas">

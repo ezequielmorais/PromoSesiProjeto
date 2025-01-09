@@ -16,14 +16,13 @@
 }
 
  .form-group {
-    margin-bottom: 5px;
-    
-    display: block;
+    margin-bottom: 5px;   
 } 
 
 .label-info {
     font-size: 16px;
     color: gray;
+    display: block;   
 }
 
 .form-group input {
@@ -71,17 +70,6 @@
 .btn:hover {
     background-color: #45a049;
 }
-.forgot-password {
-    text-align: center;
-    margin-top: 10px;
-}
-.forgot-password a {
-    color: #007bff;
-    text-decoration: none;
-}
-.forgot-password a:hover {
-    text-decoration: underline;
-}*/
 
 .col-forms{
     display: flex;
@@ -245,6 +233,7 @@ label{
 
 .painel-eventos{
     padding: 1.0rem !important;
+   
 }
 
 .container-eventos{

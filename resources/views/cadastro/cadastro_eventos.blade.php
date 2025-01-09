@@ -82,7 +82,7 @@
                     <span class="form-label sub-titulo"><label >Hora de término</label></span>
                     <label class="label-info">Insira o período de ocorrência do evento</label>
                     <input type="time">
-                    <!-- <p>teste</p> -->
+
                 </div>
             </div>
         </div>
