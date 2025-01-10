@@ -5,11 +5,17 @@
 } */
 
 .container{
-    width: 1150px;
+    width: 1300px;
 }   
 
 .sub-titulo{
     font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    color:#000;
+}
+.sub-titulo-evento{
+    font-size: 20px;
     font-family: Inter;
     font-weight: 500;
     color:#000;
@@ -21,6 +27,12 @@
 
 .label-info {
     font-size: 16px;
+    color: gray;
+    display: block;   
+}
+
+.label-info-eventos{
+    font-size: 14px;
     color: gray;
     display: block;   
 }
@@ -38,7 +50,6 @@
     cursor: pointer; 
     user-select:none;
     text-align: left;
- 
 }
 
 .btn {
@@ -150,7 +161,7 @@
 
 .div-principal{
     display: flex;
-    gap: 25px;
+    /* gap: 25px; */
     flex-direction: column;
 }
 
@@ -160,7 +171,7 @@
 }
 
 label{
-    font-size: 24px; 
+    /* font-size: 24px;  */
     font-family: Inter;
     font-weight: 500;
     color:#000;
@@ -178,13 +189,13 @@ label{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 #empresas-vinculadas-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
     margin-top: 20px;
 }
 
@@ -215,7 +226,7 @@ label{
 
 .pesquisa-container {
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
     align-items: center;
     width: 100%;
     margin-bottom: 10px;
@@ -246,5 +257,5 @@ label{
     display: flex;
     flex-direction: row !important;
     justify-content: space-around;
-    gap: 10%;
+    gap: 8%;
 }
